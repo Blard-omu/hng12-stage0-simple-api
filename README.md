@@ -62,7 +62,8 @@ npm run build && npm start
 
 ### **Base URL:**  
 ```
-http://localhost:3000/api/v1
+local: http://localhost:3000/api/v1
+production: https://chemical-sidoney-blard-31b85c0a.koyeb.app/api/v1
 ```
 
 ### **Example Response:**
