@@ -75,7 +75,7 @@ production: https://chemical-sidoney-blard-31b85c0a.koyeb.app/api/v1
 ```json
 {
   "email_address": "myname@email.com",
-  "current_date": "2023-10-25T14:30:45.123Z",
+  "current_datetime": "2023-10-25T14:30:45.123Z",
   "github_url": "https://github.com/YOUR-USERNAME/hng12-stage-0"
 }
 ```
