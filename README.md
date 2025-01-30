@@ -1,6 +1,7 @@
 # HNG12 Stage 0 API 🚀
 
 This is a simple Node.js API built with TypeScript and Express for HNG12 Stage 0.
+- [Postman](https://res.cloudinary.com/djkrhjgjd/image/upload/v1738263814/Screenshot_31_vpmadb.png)
 
 ## Features ✨
 - Returns email, current date, and GitHub URL
