@@ -14,8 +14,8 @@ This is a simple Node.js API built with TypeScript and Express for HNG12 Stage 0
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/blard/hng12-stage0-api.git
-cd hng12-stage0-api
+git clone https://github.com/Blard-omu/hng12-stage-0
+cd hng12-stage-0
 ```
 
 ### 2️⃣ Install Dependencies
@@ -32,7 +32,7 @@ npm install
 Create a `.env` file in the root folder and add:
 ```ini
 EMAIL=myname@email.com
-GITHUB_URL=https://github.com/YOUR-USERNAME/hng12-stage0-api
+GITHUB_URL=https://github.com/YOUR-USERNAME/hng12-stage-0
 PORT=3000
 ```
 
@@ -70,7 +70,7 @@ http://localhost:3000/api/v1
 {
   "email_address": "myname@email.com",
   "current_date": "2023-10-25T14:30:45.123Z",
-  "github_url": "https://github.com/YOUR-USERNAME/hng12-stage0-api"
+  "github_url": "https://github.com/YOUR-USERNAME/hng12-stage-0"
 }
 ```
 
@@ -81,7 +81,7 @@ http://localhost:3000/api/v1
 1. Fork this repository.
 2. Clone your forked repo:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/hng12-stage0-api.git
+   git clone https://github.com/YOUR-USERNAME/hng12-stage-0.git
    ```
 3. Create a new branch:
    ```bash
