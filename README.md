@@ -1,6 +1,8 @@
 # HNG12 Stage 0 API 🚀
 
 This is a simple Node.js API built with TypeScript and Express for HNG12 Stage 0.
+
+---
 <img src="https://res.cloudinary.com/djkrhjgjd/image/upload/v1738263814/Screenshot_31_vpmadb.png" alt="postman" />
 
 ## Features ✨
