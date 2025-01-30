@@ -18,7 +18,7 @@ app.route("/api/v1")
   .get((req, res) => {
     res.json({
       email_address: process.env.EMAIL,
-      current_date: new Date().toISOString(),
+      current_datetime: new Date().toISOString(),
       github_url: process.env.GITHUB_URL,
     });
   })
