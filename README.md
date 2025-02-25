@@ -2,6 +2,9 @@
 
 Tingo AI is a high-tech AI-driven software company, providing a variety of innovative products such as **Tingo AI Radio**, **TingoGPT (text-to-speech model)**, **text-to-instrumental model**, and **Tingo AI Agents**. This API powers the core functionalities of these services.
 
+![Tingo AI Logo](public/assets/postman.png)
+
+
 🌐 **Website:** [Tingo AI](https://www.tingomedia.ai)
 
 ## 🚀 Key Features
@@ -28,12 +31,15 @@ Tingo AI is a high-tech AI-driven software company, providing a variety of innov
 | Method | Endpoint               | Description                           |
 |--------|------------------------|---------------------------------------|
 | `POST` | `/generate-music`      | Generate AI-powered music            |
+| `GET`  | `/library/musics`         | Retrieve all generated musics      |
 | `GET`  | `/library/:id`         | Retrieve generated music by ID       |
 
 ### 📻 **Tingo AI Radio Endpoints**
 | Method | Endpoint     | Description                  |
 |--------|-------------|------------------------------|
-| `GET`  | `/programs` | Retrieve AI radio programs  |
+| `GET`  | `/radio/programs` | Retrieve AI radio programs  |
+| `GET`  | `/radio/programs/:id` | Retrieve AI radio program by ID  |
+| `GET`  | `/radio/weather-reports` | Retrieve all weather reports  |
 
 ---
 
