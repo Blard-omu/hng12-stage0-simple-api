@@ -1,112 +1,71 @@
-# HNG12 Stage 0 API 🚀
+# Tingo AI API
 
-This is a simple Node.js API built with TypeScript and Express for HNG12 Stage 0.
+Tingo AI is a high-tech AI-driven software company, providing a variety of innovative products such as **Tingo AI Radio**, **TingoGPT (text-to-speech model)**, **text-to-instrumental model**, and **Tingo AI Agents**. This API powers the core functionalities of these services.
+
+🌐 **Website:** [Tingo AI](https://www.tingomedia.ai)
+
+## 🚀 Key Features
+- **Secure Authentication**: User registration, login, password management.
+- **Music Generation**: AI-generated music and soundtracks.
+- **Text-to-Speech**: Advanced speech synthesis via TingoGPT.
+- **AI Radio**: Stream AI-driven radio programs.
+- **Library Management**: Store and retrieve generated music files.
 
 ---
-<img src="https://res.cloudinary.com/djkrhjgjd/image/upload/v1738263814/Screenshot_31_vpmadb.png" alt="postman" />
 
-## Features ✨
-- Returns email, current date, and GitHub URL
-- Uses TypeScript for type safety
-- Supports API versioning (`/api/v1`)
-- Environment variables for easy configuration
+## 📌 API Endpoints
+
+### 🔑 **Authentication Endpoints**
+| Method | Endpoint             | Description                 |
+|--------|----------------------|-----------------------------|
+| `POST` | `/login`             | Authenticate user           |
+| `POST` | `/register`          | Register a new user         |
+| `POST` | `/forgot-password`   | Request password reset      |
+| `POST` | `/reset-password`    | Reset user password         |
+| `POST` | `/change-password`   | Change user password        |
+
+### 🎵 **Tingo Studio Endpoints**
+| Method | Endpoint               | Description                           |
+|--------|------------------------|---------------------------------------|
+| `POST` | `/generate-music`      | Generate AI-powered music            |
+| `GET`  | `/library/:id`         | Retrieve generated music by ID       |
+
+### 📻 **Tingo AI Radio Endpoints**
+| Method | Endpoint     | Description                  |
+|--------|-------------|------------------------------|
+| `GET`  | `/programs` | Retrieve AI radio programs  |
 
 ---
 
-## 🛠 Setup Guide
-
-### 1️⃣ Clone the Repository
+## 🛠️ **Getting Started**
+### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/Blard-omu/hng12-stage0-simple-api
-cd hng12-stage0-simple-api
+git clone https://github.com/your-repo/tingo-ai-api.git
+cd tingo-ai-api
 ```
 
-### 2️⃣ Install Dependencies
-Using **Yarn**:
+### 2️⃣ **Install Dependencies**
 ```bash
-yarn install
-```
-or **npm**:
-```bash
-npm install
+yarn install  # or npm install
 ```
 
-### 3️⃣ Configure Environment Variables
-Create a `.env` file in the root folder and add:
-```ini
-EMAIL=myname@email.com
-GITHUB_URL=https://github.com/YOUR-USERNAME/hng12-stage0-simple-api
-PORT=3000
-```
+### 3️⃣ **Set Up Environment Variables**
+Create a `.env` file and configure the necessary credentials.
 
-### 4️⃣ Run the API
-
-#### **Development Mode**
+### 4️⃣ **Run the Application**
 ```bash
-yarn dev
-```
-or
-```bash
-npm run dev
-```
-
-#### **Production Mode**
-```bash
-yarn build && yarn start
-```
-or
-```bash
-npm run build && npm start
+yarn dev  # or npm run dev
 ```
 
 ---
 
-## 🖥 API Usage
+## 📝 **Contributing**
+We welcome contributions! Please check our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-### **Base URL:**  
-```
-local: http://localhost:3000/api/v1
-production: https://chemical-sidoney-blard-31b85c0a.koyeb.app/api/v1
-```
-### Backlink
-- Node.js: https://hng.tech/hire/nodejs-developers
-
-### **Example Response:**
-```json
-{
-  "email_address": "myname@email.com",
-  "current_datetime": "2023-10-25T14:30:45.123Z",
-  "github_url": "https://github.com/YOUR-USERNAME/hng12-stage-0"
-}
-```
+## 📄 **License**
+This project is licensed under the MIT License.
 
 ---
 
-## 📜 Contributing
-
-1. Fork this repository.
-2. Clone your forked repo:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/hng12-stage0-simple-api.git
-   ```
-3. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-4. Make your changes and commit:
-   ```bash
-   git commit -m "Added new feature"
-   ```
-5. Push to your fork:
-   ```bash
-   git push origin feature-name
-   ```
-6. Create a **Pull Request**.
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**.
-
----
+💡 **For more details, visit our official website:** [Tingo AI](https://www.tingomedia.ai) 🚀
 
