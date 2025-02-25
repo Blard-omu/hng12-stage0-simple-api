@@ -1,15 +1,14 @@
 {
-  "name": "hng12",
+  "name": "tingo_api",
   "version": "1.0.0",
-  "description": "hng12_stage_0",
+  "description": "Tingo API Backend",
   "main": "server.js",
-  "author": "BLARD",
+  "author": "Tingo",
   "scripts": {
-  "start": "node dist/server.js",
-  "dev": "nodemon --ext ts --exec ts-node src/server.ts",
-  "build": "tsc"
-},
-  "license": "MIT",
+    "start": "node dist/server.js",
+    "dev": "nodemon --ext ts --exec ts-node src/server.ts",
+    "build": "tsc"
+  },
   "dependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
@@ -18,7 +17,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "typescript": "^5.7.3"

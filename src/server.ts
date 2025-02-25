@@ -1,25 +1,26 @@
 import express, { Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import errorHandler from "./middlewares/errorHandler";
-import methodNotAllowed from "./middlewares/methodNotAllowed";
-import AppError from "./helper/AppError"; 
-
+import errorHandler from "./server/middlewares/errorHandler";
+import methodNotAllowed from "./server/middlewares/methodNotAllowed";
+import AppError from "./utils/helper/AppError";
+import { CONFIG } from "./conf";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = CONFIG.APPLICATION.PORT;
 
 app.use(express.json());
 app.use(cors());
+
 
 // ✅ Example API Route (Only GET Allowed)
 app.route("/api/v1")
   .get((req, res) => {
     res.json({
-      email: process.env.EMAIL,
+      message: CONFIG.WELCOME.MESSAGE,
       current_datetime: new Date().toISOString(),
-      github_url: process.env.GITHUB_URL,
+      doc_link: CONFIG.WELCOME.SWAGGER_DOC,
     });
   })
   .all(methodNotAllowed); // ❌ Rejects other methods (POST, PUT, DELETE, etc.)
